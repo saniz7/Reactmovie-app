@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
+body{
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Navbar-container{
   display: flex;
+  justify-content:space-between;
+  margin:  20px 20px 40px;
+  font-size: large;
+}
+ h3{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.Navbar-Heading{
+  color: white;
+  
+}
+
+.Searchbox{
+  height: 16px;
+  padding: 5px;
+}
+.Movie-container{
+  width: 100%;
+ gap: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card{
+  height: 20%;
+width: 20%;
+gap: 15px;
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
   flex-direction: column;
+}
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.1);  
+}
+.card-text{
+  color: white;
+ 
+  width: 88%;
+}
+.card-body{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.card img{
+  height: 455px;
+}
+.Overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+  background-color: black;
+  height: 35px;
+  opacity: 0;
+}
+.card:hover .Overlay{
+  opacity: 1;
+}
+span{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fa-thin fa-heart{
+  color: red;
 }
